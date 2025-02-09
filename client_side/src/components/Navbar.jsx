@@ -7,7 +7,7 @@ const Navbar = () => {
   const navigate=useNavigate()
   const handleSignout = () => {
     // eslint-disable-next-line no-restricted-globals
-    if (confirm("Are you sure?")) {
+    if (confirm("Are you sure you want to sign out?")) {
       document.cookie =
         "loginToken=; expires=Thu, 01 Jan 1970 00:00:00 UTC; path=/;";
       localStorage.clear();

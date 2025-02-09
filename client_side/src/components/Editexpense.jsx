@@ -117,7 +117,8 @@ const Editexpense = () => {
             </div>
         ) : (
             <div className="access-denied">
-                <h1>You cannot access this page.</h1>
+                <h1>You cannot access this page by directly hitting the /edit-expense API.</h1>
+                <h2>You can only access this page via Dashboard--'Edit' button</h2>
             </div>
         )
     ) : (
