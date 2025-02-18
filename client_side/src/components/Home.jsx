@@ -12,12 +12,12 @@ const Home = () => {
     isLoggedIn ? (
       <div className="home-container" style={contexts.mode==="Enable Dark Mode"?{backgroundColor:"#f5f5f5"}:{backgroundColor:"#161515"}}>
         <h1 className="home-welcome-message" style={contexts.mode==="Enable Dark Mode"?{color:"#333"}:{color:"white"}}>
-          Welcome to Home Page {firstnameAccess.userMessage}:)
+         <b>Welcome to Home Page {firstnameAccess.userMessage}:)</b>
         </h1>
       </div>
     ) : (
       <div className="home-container" style={contexts.mode==="Enable Dark Mode"?{backgroundColor:"#f5f5f5"}:{backgroundColor:"#161515"}}>
-        <h1 className="home-welcome-message" style={contexts.mode==="Enable Dark Mode"?{color:"#333"}:{color:"white"}}>Welcome to Budget Bee</h1>
+        <h1 className="home-welcome-message" style={contexts.mode==="Enable Dark Mode"?{color:"#333"}:{color:"white"}}><b>Welcome to Expense Management System</b></h1>
         <p className="home-description" style={contexts.mode==="Enable Dark Mode"?{color:"rgb(103 93 73)"}:{color:"#e7dada"}}>A budgeting app for managing your finances</p>
         <div className="home-buttons">
           <Link to="/login">
